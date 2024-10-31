@@ -24,7 +24,16 @@ public class FizzBuzzTest {
     void test_ifnumberisdivisibleby5_thenreturnBuzz() {
 
         Fizzbuzz buzzFizz = new Fizzbuzz();
-        String result= buzzFizz.checkNumber(10);
+        String result = buzzFizz.checkNumber(10);
         assertEquals("Buzz", result);
+    }
+    @Test
+    @DisplayName ("test if the number is multiple of 3 and 5")
+    void test_ifthenumberismultipleof3and5 (){
+
+        Fizzbuzz buzzFizz = new Fizzbuzz();
+        String result = buzzFizz.checkNumber(15);
+        assertEquals("FizzBuzz", result);
+
     }
 }
