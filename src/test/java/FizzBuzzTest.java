@@ -25,6 +25,6 @@ public class FizzBuzzTest {
 
         Fizzbuzz buzzFizz = new Fizzbuzz();
         String result= buzzFizz.checkNumber(10);
-
+        assertEquals("Buzz", result);
     }
 }
